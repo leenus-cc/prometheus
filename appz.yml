@@ -8,10 +8,10 @@ build:
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: prometheus-2.45
+    image_template: prometheus-3.4
 
 deploy:
-    context: alpha/DEV
+    context: leenus-cc/DEV
     type: statefulset
     replicas: 1
     port:
